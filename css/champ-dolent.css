@@ -1,0 +1,61 @@
+/* tangerine-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Tangerine';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../font/tangerine-v17-latin/tangerine-v17-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* tangerine-700 - latin */
+/* tangerine-v17-latin-regular.woff2*/
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Tangerine';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../font/tangerine-v17-latin/tangerine-v17-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+body{
+  margin-top:400px;
+
+}
+/* barre de navigation */
+.navbar{
+  background:#6ab3b2 !important ;
+}
+/*     /* changer et mettre un @media  */
+ 
+a #logo{
+height: 100px;
+width: 100px;
+}
+div .collapse{
+  flex-direction: row-reverse;
+}
+/* header */
+header{
+  font-family: 'tangerine';
+}
+h1{
+  font-family:'tangerine';
+  font-size: 100px;
+  width: 100%;
+  }
+  /* main */
+
+  /* footer */
+  
+  /* media screen */
+  @media screen and (min-width:768px){
+    a #logo{
+      height: 150px;
+      width: 150px;
+    }
+  
+  }
+  @media screen and (min-width:1280px){
+    a #logo{
+      height: 200px;
+      width: 200px;
+    }
+  }
