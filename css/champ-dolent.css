@@ -17,7 +17,7 @@
 }
 body{
   margin-top:230px;
-
+border:border-box
 }
 /* barre de navigation */
 .navbar{
@@ -34,6 +34,7 @@ div .collapse{
 }
 /* header */
 header{
+  margin-left: 30px;
   font-family: 'tangerine';
 }
 h1{
@@ -42,7 +43,18 @@ h1{
   width: 100%;
   }
   /* main */
+.main{
+  margin-left: 30px;
+}
+.main img{
+  width: 50%;
+}
+/* formulaire page inscription  */
 
+.row{
+  margin: 30px !important;
+     margin-left: calc(0.5* var(--bs-gutter-x));
+}
   /* footer */
   
   /* media screen */
@@ -51,7 +63,7 @@ h1{
       height: 150px;
       width: 150px;
     }
-  
+
   }
   @media screen and (min-width:1280px){
     a #logo{
