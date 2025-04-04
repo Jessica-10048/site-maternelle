@@ -43,42 +43,15 @@
   <!-- /* header */ -->
   
   <div class="header">
-    <h1 class="col-12">Inscription et Connexion</h1>  
+    <h1 class="col-12">Connexion</h1>  
   </div>
-  <h2>Vous avez deja un compte <a href="connexion.html">Cliquez ici</a></h2>
   <section id="formulaire">
     <form class="row g-3">
-      <div id="validationServer04Feedback" class="invalid-feedback">
-        Veuillez selectionner une classe.
-      </div>
-      <div class="col-md-12">
-        <label for="validationServer04" class="form-label">Chosir une classe</label>
-        <select class="form-select is-valid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
-          <option selected disabled value="">Veuillez selectionner une classe</option>
-          <option>Classe de Maitresse Anne</option>
-          <option>Classe de Maitresse Elisabeth</option>
-          <option>Classe de Maitresse Imane</option>
-          <option>Classe de Maitresse Karine</option>
-        </select>
-      </div>      
-      <div class="col-md-4">
-        <label for="validationServer01" class="form-label">Prénom</label>
-        <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
-        <div class="valid-feedback">
-          Bienvenue!
-        </div>
-      </div>
-      <div class="col-md-4">
-        <label for="validationServer02" class="form-label">Nom</label>
-        <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
-        <div class="valid-feedback">
-          Bienvenue!
-        </div>
-      </div>
+
       <div class="col-md-4">
         <label for="validationServerUsername" class="form-label">Email</label>
         <div class="input-group has-validation">
-          <span class="input-group-text" id="inputGroupPrepend3">@</span>
+      
           <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
           <div id="validationServerUsernameFeedback" class="invalid-feedback">
             Veuillez entrez une adresse Email
@@ -89,26 +62,12 @@
         <label for="pass">Mot de passe (8 characters minimum):</label>
         <input type="password" id="pass" name="password" minlength="8" required />
       </div>
-    
-    
-      <div class="col-12">
-        <div class="form-check">
-          <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
-          <label class="form-check-label" for="invalidCheck3">
-            Accepter les termes et conditions
-          </label>
-          <div id="invalidCheck3Feedback" class="invalid-feedback">
-            Vous devez donner votre accord avant de soumettre votre demande.
-          </div>
-        </div>
-      </div>
-      <div class="col-12">
-        <button class="btn btn-primary" type="submit">Envoyer le formulaire</button>
+     <div class="col-12">
+        <button class="btn btn-primary" type="submit">Connexion</button>
       </div>
     </form>
   </form>
 </section>
-<script src="js/bootstrap.bundle.js"></script>
 <script src="js/champ-dolent.js"></script>
 </body>
 </html>

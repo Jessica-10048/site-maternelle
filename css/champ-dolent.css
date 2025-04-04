@@ -16,7 +16,7 @@
   src: url('../font/tangerine-v17-latin/tangerine-v17-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 body{
-  margin-top:230px;
+  margin-top:270px;
 border:border-box
 }
 /* barre de navigation */
@@ -34,7 +34,6 @@ div .collapse{
 }
 /* header */
 header{
-  margin-left: 30px;
   font-family: 'tangerine';
 }
 h1{
@@ -43,18 +42,15 @@ h1{
   width: 100%;
   }
   /* main */
-.main{
-  margin-left: 30px;
-}
-.main img{
-  width: 50%;
-}
+  h2{ 
+    font-family:'tangerine';
+    font-size: 40px;
+
+  }
+
 /* formulaire page inscription  */
 
-.row{
-  margin: 30px !important;
-     margin-left: calc(0.5* var(--bs-gutter-x));
-}
+
   /* footer */
   
   /* media screen */
