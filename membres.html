@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Membres</title>
+    <!-- font -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">  -->
+    <!-- css -->
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="css/champ-dolent.css" />
+  </head>
+  <body>
+    <!-- Conteneur global de la page-->
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a href="#" class="col-2">
+            <img
+              id="logo"
+              src="img/logo-champ-dolent.jpg"
+              alt="logo-champ-dolent"
+            />
+          </a>
+          <a class="navbar-brand" href="#">Maternelle Le Champ Dolent</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Accueil</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="inscription-connexion.html"
+                  >Inscription/Connexion</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Menu Admin -->
+      <div class="MenuAdmin">
+        <button id="btn1">Menu Admin</button>
+        <div id="slideToggle" style="display: none">
+          <a href="admin.html">Page d'Accueil Admin</a>
+          <a href="membres.html">Membres</a>
+          <a href="projets.html">Projets</a>
+          <a href="classes.html">Classes</a>
+          <a href="newsLetters.html">Newsletters</a>
+          <a href="menus.html">Menus</a>
+          <a href="avis.html">Avis</a>
+        </div>
+      </div>
+
+      <!-- Main content -->
+      <h1>Gestion des Membres</h1>
+      <p>Ici vous pouvez : Créer / Modifier / Supprimer des Membres</p>
+
+      <!-- Créer un membre -->
+      <button type="button" id="btn2" class="btn btn-success">Créer</button>
+      <div id="créationMembre" style="display: none">
+        <form method="POST" action="process_member.php">
+          <h2 class="créer">Créer un Membre</h2>
+          <label for="memberName">Entrer le nom du membre: </label>
+          <input type="text" id="memberName" name="memberName" />
+          <br />
+          <label for="memberFirstName">Entrer le Prénom du membre: </label>
+          <input type="text" id="memberFirstName" name="memberFirstName" />
+          <br />
+          <label for="classSelect">Sélectionner une classe: </label>
+          <select name="classes" id="classSelect">
+            <option value="disabled" disabled selected>
+              Choisir une classe
+            </option>
+            <option value="Anne">Maitresse Anne</option>
+            <option value="Elisabeth">Maitresse Elisabeth</option>
+            <option value="Imane">Maitresse Imane</option>
+            <option value="Karine">Maitresse Karine</option>
+          </select>
+          <div>
+            <button type="submit" class="btn btn-success">Créer</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Modifier ou supprimer un membre -->
+    <div>
+      <label for="rechercheMembre" class="form-label"
+        >Rechercher un membre :</label
+      >
+      <input
+        class="form-control"
+        list="datalistOptions"
+        id="rechercheMembre"
+        placeholder="Entrer le nom d'un membre..."
+      />
+      <datalist id="datalistOptions">
+        <option value="Marville Jessica"></option>
+      </datalist>
+    </div>
+
+    <div id="modifMembre" style="display: none">
+      <input
+        type="button"
+        id="modification"
+        class="btn btn-info"
+        name="selection"
+        value="modifier"
+      />
+      <input
+        type="button"
+        id="suppression"
+        class="btn btn-danger"
+        name="selection"
+        value="supprimer"
+      />
+    </div>
+
+    <!-- Footer -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/champ-dolent.js"></script>
+  </body>
+</html>
